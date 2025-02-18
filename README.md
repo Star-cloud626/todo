@@ -79,7 +79,7 @@ This project demonstrates the design and implementation of a scalable full-stack
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/Star-cloud626/todo216.git
+git clone git@github.com:Star-cloud626/todo.git
 ```
 
 

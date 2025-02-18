@@ -15,10 +15,10 @@ services:
       - '5432:5432'
     volumes:
       - ./database/boilerplate:/var/lib/postgresql/data/
-    # command: >
-    #   sh -c "exec docker-entrypoint.sh postgres &               
-    #   until pg_isready -h localhost -p 5432; do sleep 2; done;  
-    #   psql -U $PG_USER -c 'CREATE DATABASE complete;' || true"
+    command: >
+      sh -c "exec docker-entrypoint.sh postgres &               
+      until pg_isready -h localhost -p 5432; do sleep 2; done;  
+      psql -U $PG_USER -c 'CREATE DATABASE complete;' || true"
 
   be_boilerplate:
     build:
