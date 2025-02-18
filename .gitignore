@@ -1,0 +1,9 @@
+# database
+database
+
+#frontend
+src/frontend/.next
+src/frontend/node_module
+
+#backend
+src/backend/node_module
